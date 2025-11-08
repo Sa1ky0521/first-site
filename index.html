@@ -98,17 +98,18 @@
             <section id="conect">
             <form action="/send" method="post">
                 <fieldset>
-                    <label> Имя:</label>
-                    <input type="text" placeholder="Введите ваше имя" required><br><br>
-                    <label> Email:</label>
-                    <input type="email" placeholder="example@mail.com" required><br><br> <label for="city">Тема</label>
+                    <label  for="name"> Имя:</label>
+                    <input  id="name" type="text" placeholder="Введите ваше имя" required><br><br>
+                    <label for="email" > Email:</label>
+                    <input  id="email" type="email" placeholder="example@mail.com" required><br><br> <label for="city">Тема</label>
                     <select name="city" id="city">
                         <option value="" disabled selected>Выберите тему</option>
                         <option value="vopros">Вопрос</option>
                         <option value="predloshenie">Предложение</option>
                         <option value="blagodarnost">Благодарность</option>
                     </select>
-                    <label for="message">Ваше сообщение</label><br>
+                    <br>
+                    <label for="massage">Ваше сообщение</label><br>
                     <textarea name="massage" id="massage" rows="5" cols="20"
                         placeholder="Введите ваше сообщение"></textarea><br><br>
                     <button type="submit">Отправить</button>
@@ -128,6 +129,7 @@
   
 
   
+
 
 
 
