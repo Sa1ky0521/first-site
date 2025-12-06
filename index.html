@@ -25,7 +25,7 @@
                   <br>
                 <a href="#kontakt">Контакты</a>
                  <br>
-                <a href="#conect">Связь со мной</a>
+                <a href="#feedback">Связь со мной</a>
                 <br>
                 <a href="index2.html">Ссылка на нестильзованную страницу</a>
                 
@@ -114,29 +114,37 @@
                     <h2>Форма обратной связи</h2>
                 </article>
             </section>
-        <article>
-            <section id="conect">
-            <form action="/send" method="post">
-                <fieldset>
-                    <label  for="name"> Имя:</label>
-                    <input  id="name" type="text" placeholder="Введите ваше имя" required><br><br>
-                    <label for="email" > Email:</label>
-                    <input  id="email" type="email" placeholder="example@mail.com" required><br><br> <label for="city">Тема</label>
-                    <select name="city" id="city">
-                        <option value="" disabled selected>Выберите тему</option>
-                        <option value="vopros">Вопрос</option>
-                        <option value="predloshenie">Предложение</option>
-                        <option value="blagodarnost">Благодарность</option>
-                    </select>
-                    <br>
-                    <label for="massage">Ваше сообщение</label><br>
-                    <textarea name="massage" id="massage" rows="5" cols="20"
-                        placeholder="Введите ваше сообщение"></textarea><br><br>
-                    <button type="submit">Отправить</button>
-                </fieldset>
-             </form>
-            </section>
-        </article>
+        </section>
+            <hr>
+            <section id="feedback">
+      <h2>Форма обратной связи</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Свяжитесь со мной</legend>
+
+          <label for="name">Имя:</label><br>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" minlength="2" required><br><br>
+
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+          <label for="topic">Тема:</label><br>
+          <select id="topic" name="topic" required>
+            <option value="" disabled selected>Выберите тему...</option>
+            <option value="question">Вопрос</option>
+            <option value="suggestion">Предложение</option>
+            <option value="thanks">Благодарность</option>
+          </select><br><br>
+
+          <label for="message">Сообщение:</label><br>
+          <textarea id="message" name="message" rows="5" placeholder="Введите сообщение..." minlength="10"
+            required></textarea><br><br>
+
+          <button type="submit">Отправить сообщение</button>
+        </fieldset>
+      </form>
+    </section>
         </main>
         <footer>
             <a href="#verxstranici">Вверх страницы</a>
@@ -147,5 +155,6 @@
 
 
     </html>
+
 
 
